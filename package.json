@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node boot.js"
+    "dev": "gulp start"
   },
   "author": "",
   "license": "ISC",
@@ -14,13 +14,16 @@
     "babel-core": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
     "gulp-webpack": "^1.5.0",
+    "nodemon": "^1.14.8",
     "vinyl-named": "^1.1.0",
     "webpack": "^3.10.0"
   },
   "dependencies": {
     "babel-preset-stage-3": "^6.24.1",
     "koa-pug": "^3.0.0-2",
+    "koa-router": "^7.3.0",
     "lodash": "^4.17.4",
     "vue-loader": "^13.6.2"
   },

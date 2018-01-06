@@ -1,5 +1,6 @@
 import Koa from 'koa';
 import Pug from 'koa-pug';
+import router from './routes';
 
 const app = new Koa();
 
@@ -18,8 +19,7 @@ new Pug({ // eslint-disable-line no-new
   app: app
 });
 
-app.use(async ctx => {
-  ctx.body = 'Hello World';
-});
 
+app.use(router.routes())
+  .use(router.allowedMethods());
 app.listen(7878);

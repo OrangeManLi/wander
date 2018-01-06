@@ -1,0 +1,30 @@
+doctype html
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh-hans"><![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="zh-hans"><![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="zh-hans"><![endif]-->
+<!--[if IE 9]>
+<html class="no-js lt-ie10" lang="zh-hans"><![endif]-->
+<!--[if gt IE 9]><!-->
+html(lang="zh-Hans")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title january
+
+    link(href="http://www.inspiry.cn/wp-content/uploads/sites/36/2017/06/InsPOS.png", rel="icon", type="image/png")
+    link(href="//inspiry.cn/wp-content/uploads/sites/36/custom_styles/combined.css",rel="stylesheet")
+    link(href="//inspiry.cn/wp-content/uploads/sites/36/custom_styles/dynamic.css",rel="stylesheet")
+    link(href="http://inspiry.cn/wp-content/plugins/js_composer/assets/css/js_composer.min.css",rel="stylesheet")
+    link(href="http://inspiry.cn/wp-content/plugins/formcraft3/dist/form.css",rel="stylesheet")
+    link(href="http://inspiry.cn/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-horizontal/style.css",rel="stylesheet")
+  body.kleo-navbar-fixed
+    include ./nav.pug
+
+    #main
+      block content
+
+    include ./footer.pug
